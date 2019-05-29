@@ -1,0 +1,7 @@
+pages\SearchPage.class
+pages\LandingPage.class
+pages\PageObject.class
+entities\Product.class
+runners\RunnerTest.class
+steps\EbaySteps.class
+steps\MainSteps.class

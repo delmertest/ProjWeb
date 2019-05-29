@@ -1,0 +1,125 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Create doc",
+        "description": "",
+        "id": "bcp-web-automation-exam;create-doc",
+        "after": [
+          {
+            "result": {
+              "duration": 1833021032,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.closeBrowser(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7909499785,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I open \"https://www.google.com/\" in \"Firefox\" browser",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.google.com/\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"Firefox\"",
+                  "offset": 36
+                }
+              ],
+              "location": "Hooks.i_open_in_browser(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6633162996,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I go to Drive page",
+            "match": {
+              "location": "GDriveSteps.i_go_to_Drive_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2068226456,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I login to google with user \"examenparabcp\" and password \"123456bcp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"examenparabcp\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"123456bcp\"",
+                  "offset": 57
+                }
+              ],
+              "location": "GDriveSteps.i_login_to_google_with_user_and_password(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9800461435,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I create a new text document with name \"E01_Delmer Espinoza Vigo_TIMESTAMP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"E01_Delmer Espinoza Vigo_TIMESTAMP\"",
+                  "offset": 39
+                }
+              ],
+              "location": "GDriveSteps.i_create_a_new_text_document_with_name(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 603003310,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I verify that document was saved",
+            "match": {
+              "location": "GDriveSteps.i_verify_that_document_was_saved()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@drive"
+          }
+        ]
+      }
+    ],
+    "name": "BCP web automation exam",
+    "description": "",
+    "id": "bcp-web-automation-exam",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/bcpTest.feature",
+    "tags": []
+  }
+]
